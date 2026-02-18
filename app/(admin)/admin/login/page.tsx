@@ -5,7 +5,7 @@ import { validateAdminToken } from "@/middleware";
 import LoginForm from "@/components/admin/LoginForm";
 
 export const metadata: Metadata = {
-  title: "Admin Login — Sticker Trendz",
+  title: "Login — Sticker Trendz Admin",
   robots: { index: false, follow: false },
 };
 
