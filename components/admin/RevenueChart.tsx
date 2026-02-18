@@ -15,6 +15,7 @@ import type { DailyMetric } from "@/types";
 
 interface RevenueChartProps {
   data: DailyMetric[];
+  isLoading?: boolean;
   className?: string;
 }
 
@@ -30,7 +31,21 @@ function formatDollar(value: number): string {
   })}`;
 }
 
-export default function RevenueChart({ data, className }: RevenueChartProps) {
+export default function RevenueChart({ data, isLoading = false, className }: RevenueChartProps) {
+  if (isLoading) {
+    return (
+      <div
+        className={cn(
+          "rounded-xl border border-gray-200 bg-white p-6 shadow-sm",
+          className
+        )}
+      >
+        <div className="h-4 w-48 rounded bg-gray-200 animate-pulse mb-4" />
+        <div className="h-[300px] rounded bg-gray-200 animate-pulse" />
+      </div>
+    );
+  }
+
   if (data.length === 0) {
     return (
       <div
