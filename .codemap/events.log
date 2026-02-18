@@ -1,0 +1,75 @@
+2026-02-18 08:43:03 | CREATE | components/admin/MetricsCard.tsx         |   56 |    +56 | 
+2026-02-18 08:43:14 | CREATE | components/admin/RevenueChart.tsx        |  117 |   +117 | 
+2026-02-18 08:43:28 | CREATE | app/(admin)/admin/page.tsx               |   79 |    +79 | 
+2026-02-18 08:43:33 | REMOVE | app/(admin)/layout.tsx                   |    0 |     -7 | 
+2026-02-18 08:43:41 | REMOVE | components/admin/RevenueChart.tsx        |    0 |   -117 | 
+2026-02-18 08:49:48 | CREATE | components/admin/OrdersTable.tsx         |  140 |   +140 | 
+2026-02-18 08:49:59 | CREATE | app/(admin)/admin/orders/page.tsx        |   41 |    +41 | 
+2026-02-18 12:24:13 | CREATE | components/admin/StickersTable.tsx       |  180 |   +180 | 
+2026-02-18 12:24:22 | CREATE | app/(admin)/admin/stickers/page.tsx      |   28 |    +28 | 
+2026-02-18 12:26:01 | REMOVE | app/(admin)/admin/orders/page.tsx        |    0 |    -41 | 
+2026-02-18 12:26:01 | REMOVE | app/(admin)/admin/page.tsx               |    0 |    -79 | 
+2026-02-18 12:26:01 | REMOVE | app/(admin)/admin/stickers/page.tsx      |    0 |    -28 | 
+2026-02-18 12:26:01 | REMOVE | components/admin/MetricsCard.tsx         |    0 |    -56 | 
+2026-02-18 12:26:01 | REMOVE | components/admin/OrdersTable.tsx         |    0 |   -140 | 
+2026-02-18 12:26:01 | REMOVE | components/admin/RevenueChart.tsx        |    0 |   -119 | 
+2026-02-18 12:26:01 | REMOVE | components/admin/StickersTable.tsx       |    0 |   -180 | 
+2026-02-18 12:26:01 | REMOVE | app/(admin)/layout.tsx                   |    0 |    -38 | 
+2026-02-18 12:26:01 | WRITE  | app/(admin)/admin/orders/page.tsx        |   41 |    +41 | 
+2026-02-18 12:26:01 | CREATE | app/(admin)/admin/page.tsx               |   79 |    +79 | 
+2026-02-18 12:26:01 | CREATE | components/admin/MetricsCard.tsx         |   56 |    +56 | 
+2026-02-18 12:26:01 | CREATE | components/admin/OrdersTable.tsx         |  140 |   +140 | 
+2026-02-18 12:26:01 | CREATE | components/admin/RevenueChart.tsx        |  119 |   +119 | 
+2026-02-18 12:26:01 | CREATE | components/admin/StickersTable.tsx       |  180 |   +180 | 
+2026-02-18 12:28:38 | REMOVE | components/admin/RevenueChart.tsx        |    0 |   -119 | 
+2026-02-18 12:28:44 | REMOVE | components/admin/RevenueChart.tsx        |    0 |        | 
+2026-02-18 12:28:50 | CREATE | app/(admin)/admin/loading.tsx            |   27 |    +27 | 
+2026-02-18 12:28:54 | CREATE | app/(admin)/admin/orders/loading.tsx     |   10 |    +10 | 
+2026-02-18 12:28:58 | CREATE | app/(admin)/admin/stickers/loading.tsx   |   10 |    +10 | 
+2026-02-18 12:29:57 | REMOVE | app/(admin)/admin/loading.tsx            |    0 |    -27 | 
+2026-02-18 12:29:57 | REMOVE | app/(admin)/admin/orders/loading.tsx     |    0 |    -10 | 
+2026-02-18 12:29:57 | REMOVE | app/(admin)/admin/stickers/loading.tsx   |    0 |    -10 | 
+2026-02-18 12:29:57 | REMOVE | components/admin/RevenueChart.tsx        |    0 |        | 
+2026-02-18 12:29:58 | CREATE | app/(admin)/admin/loading.tsx            |   27 |    +27 | 
+2026-02-18 12:29:58 | CREATE | app/(admin)/admin/orders/loading.tsx     |   10 |    +10 | 
+2026-02-18 12:29:58 | CREATE | app/(admin)/admin/stickers/loading.tsx   |   10 |    +10 | 
+2026-02-18 12:29:58 | REMOVE | components/admin/RevenueChart.tsx        |    0 |        | 
+2026-02-18 12:31:54 | CREATE | app/(shop)/error.tsx                     |   33 |    +33 | 
+2026-02-18 12:32:25 | REMOVE | app/(shop)/error.tsx                     |    0 |    -33 | 
+2026-02-18 12:32:25 | CREATE | app/(shop)/error.tsx                     |   33 |    +33 | 
+2026-02-18 12:34:50 | REMOVE | app/not-found.tsx                        |    0 |    -26 | 
+2026-02-18 12:34:51 | REMOVE | app/(admin)/admin/page.tsx               |    0 |    -79 | 
+2026-02-18 12:34:52 | REMOVE | app/(admin)/admin/login/page.tsx         |    0 |    -33 | 
+2026-02-18 12:35:22 | REMOVE | app/(admin)/admin/login/page.tsx         |    0 |        | 
+2026-02-18 12:35:22 | REMOVE | app/(admin)/admin/page.tsx               |    0 |        | 
+2026-02-18 12:35:22 | REMOVE | app/not-found.tsx                        |    0 |        | 
+2026-02-18 12:35:23 | REMOVE | app/(admin)/admin/login/page.tsx         |    0 |        | 
+2026-02-18 12:35:23 | REMOVE | app/(admin)/admin/page.tsx               |    0 |        | 
+2026-02-18 12:35:23 | REMOVE | app/not-found.tsx                        |    0 |        | 
+2026-02-18 12:39:09 | REMOVE | app/layout.tsx                           |    0 |    -31 | 
+2026-02-18 12:39:14 | REMOVE | app/(shop)/layout.tsx                    |    0 |     -7 | 
+2026-02-18 12:39:19 | REMOVE | components/shop/SiteHeader.tsx           |    0 |    -61 | 
+2026-02-18 12:39:29 | REMOVE | components/shop/SiteHeader.tsx           |    0 |        | 
+2026-02-18 12:41:11 | REMOVE | components/shop/SiteHeader.tsx           |    0 |        | 
+2026-02-18 12:41:21 | REMOVE | components/shop/SiteHeader.tsx           |    0 |        | 
+2026-02-18 12:41:25 | REMOVE | lib/cart.ts                              |    0 |    -78 | 
+2026-02-18 12:41:31 | REMOVE | components/admin/StickersTable.tsx       |    0 |   -180 | 
+2026-02-18 12:41:37 | REMOVE | components/admin/StickersTable.tsx       |    0 |        | 
+2026-02-18 12:41:42 | REMOVE | components/admin/StickersTable.tsx       |    0 |        | 
+2026-02-18 12:42:43 | REMOVE | app/(shop)/layout.tsx                    |    0 |        | 
+2026-02-18 12:42:43 | REMOVE | app/layout.tsx                           |    0 |        | 
+2026-02-18 12:42:43 | REMOVE | components/admin/StickersTable.tsx       |    0 |        | 
+2026-02-18 12:42:43 | REMOVE | components/shop/SiteHeader.tsx           |    0 |        | 
+2026-02-18 12:42:43 | REMOVE | lib/cart.ts                              |    0 |        | 
+2026-02-18 12:42:43 | REMOVE | components/admin/StickersTable.tsx       |    0 |        | 
+2026-02-18 12:42:43 | REMOVE | components/shop/SiteHeader.tsx           |    0 |        | 
+2026-02-18 12:42:43 | REMOVE | lib/cart.ts                              |    0 |        | 
+2026-02-18 13:02:00 | CREATE | __tests__/api/checkout.test.ts           |  256 |   +256 | 
+2026-02-18 13:02:37 | CREATE | __tests__/api/webhooks/stripe.test.ts    |  262 |   +262 | 
+2026-02-18 13:03:07 | CREATE | __tests__/components/shop/CartDrawer.test.tsx |  272 |   +272 | 
+2026-02-18 13:03:24 | CREATE | __tests__/components/shop/StickerCard.test.tsx |  154 |   +154 | 
+2026-02-18 13:10:32 | REMOVE | middleware.ts                            |    0 |    -71 | 
+2026-02-18 13:10:34 | REMOVE | app/api/admin/login/route.ts             |    0 |    -37 | 
+2026-02-18 13:10:48 | REMOVE | lib/stripe.ts                            |    0 |    -63 | 
+2026-02-18 13:11:09 | REMOVE | middleware.ts                            |    0 |        | 
+2026-02-18 13:11:12 | REMOVE | app/(admin)/admin/login/page.tsx         |    0 |    -33 | 

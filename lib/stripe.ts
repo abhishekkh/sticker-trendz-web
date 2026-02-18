@@ -1,8 +1,26 @@
 import Stripe from "stripe";
 
 // Server-only: uses STRIPE_SECRET_KEY. Never import in client components.
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2026-01-28.clover",
+let _stripe: Stripe | null = null;
+
+function getInstance(): Stripe {
+  if (!_stripe) {
+    const apiKey = process.env.STRIPE_SECRET_KEY;
+    if (!apiKey) throw new Error("STRIPE_SECRET_KEY environment variable is not set");
+    _stripe = new Stripe(apiKey, { apiVersion: "2026-01-28.clover" });
+  }
+  return _stripe;
+}
+
+// Lazy proxy — Stripe is only instantiated on first use, not at module load time.
+export const stripe = new Proxy({} as Stripe, {
+  get(_target, prop: string | symbol) {
+    const instance = getInstance();
+    const value = instance[prop as keyof Stripe];
+    return typeof value === "function"
+      ? (value as (...args: unknown[]) => unknown).bind(instance)
+      : value;
+  },
 });
 
 export interface CheckoutItem {

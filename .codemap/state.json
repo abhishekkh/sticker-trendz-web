@@ -1,0 +1,132 @@
+{
+  "updated_at": "2026-02-18T13:11:12.265792-06:00",
+  "file_count": 76,
+  "hubs": [
+    "public/next.svg"
+  ],
+  "importers": {
+    "app/(shop)/checkout/success/CartClearer.tsx": [
+      "app/(shop)/checkout/success/page.tsx"
+    ],
+    "app/globals.css": [
+      "app/layout.tsx"
+    ],
+    "components/shop/CartDrawer.tsx": [
+      "components/shop/SiteHeader.tsx"
+    ],
+    "components/shop/StickerCard.tsx": [
+      "components/shop/StickerGrid.tsx"
+    ],
+    "components/shop/TierBadge.tsx": [
+      "components/shop/StickerCard.tsx"
+    ],
+    "components/shop/TierFilter.tsx": [
+      "components/shop/StickerGrid.tsx"
+    ],
+    "lib/stripe.ts": [
+      "lib/stripe.ts"
+    ],
+    "public/next.svg": [
+      "app/(admin)/admin/stickers/page.tsx",
+      "app/(admin)/admin/login/page.tsx",
+      "next.config.ts",
+      "app/(shop)/stickers/[id]/page.tsx",
+      "app/(shop)/checkout/success/page.tsx",
+      "app/(admin)/admin/page.tsx",
+      "app/not-found.tsx",
+      "app/layout.tsx",
+      "app/(shop)/page.tsx",
+      "app/(admin)/admin/orders/page.tsx"
+    ]
+  },
+  "imports": {
+    "app/(admin)/admin/login/page.tsx": [
+      "public/next.svg"
+    ],
+    "app/(admin)/admin/orders/page.tsx": [
+      "public/next.svg"
+    ],
+    "app/(admin)/admin/page.tsx": [
+      "public/next.svg"
+    ],
+    "app/(admin)/admin/stickers/page.tsx": [
+      "public/next.svg"
+    ],
+    "app/(shop)/checkout/success/page.tsx": [
+      "public/next.svg",
+      "app/(shop)/checkout/success/CartClearer.tsx"
+    ],
+    "app/(shop)/page.tsx": [
+      "public/next.svg"
+    ],
+    "app/(shop)/stickers/[id]/page.tsx": [
+      "public/next.svg"
+    ],
+    "app/layout.tsx": [
+      "public/next.svg",
+      "app/globals.css"
+    ],
+    "app/not-found.tsx": [
+      "public/next.svg"
+    ],
+    "components/shop/SiteHeader.tsx": [
+      "components/shop/CartDrawer.tsx"
+    ],
+    "components/shop/StickerCard.tsx": [
+      "components/shop/TierBadge.tsx"
+    ],
+    "components/shop/StickerGrid.tsx": [
+      "components/shop/StickerCard.tsx",
+      "components/shop/TierFilter.tsx"
+    ],
+    "lib/stripe.ts": [
+      "lib/stripe.ts"
+    ],
+    "next.config.ts": [
+      "public/next.svg"
+    ]
+  },
+  "recent_events": [
+    {
+      "time": "2026-02-18T13:10:32.129268-06:00",
+      "op": "REMOVE",
+      "path": "middleware.ts",
+      "lang": "typescript",
+      "delta": -71,
+      "size_delta": -2183
+    },
+    {
+      "time": "2026-02-18T13:10:34.883199-06:00",
+      "op": "REMOVE",
+      "path": "app/api/admin/login/route.ts",
+      "lang": "typescript",
+      "delta": -37,
+      "size_delta": -1030
+    },
+    {
+      "time": "2026-02-18T13:10:48.683525-06:00",
+      "op": "REMOVE",
+      "path": "lib/stripe.ts",
+      "lang": "typescript",
+      "delta": -63,
+      "size_delta": -1616,
+      "importers": 1,
+      "imports": 1
+    },
+    {
+      "time": "2026-02-18T13:11:09.400962-06:00",
+      "op": "REMOVE",
+      "path": "middleware.ts",
+      "lang": "typescript"
+    },
+    {
+      "time": "2026-02-18T13:11:12.265659-06:00",
+      "op": "REMOVE",
+      "path": "app/(admin)/admin/login/page.tsx",
+      "lang": "typescript",
+      "delta": -33,
+      "size_delta": -1012,
+      "imports": 1
+    }
+  ]
+}
