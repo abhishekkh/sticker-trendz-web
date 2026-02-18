@@ -5,7 +5,7 @@ import MetricsCard from "@/components/admin/MetricsCard";
 import RevenueChart from "@/components/admin/RevenueChart";
 
 export const metadata: Metadata = {
-  title: "Admin Dashboard — Sticker Trendz",
+  title: "Dashboard — Sticker Trendz Admin",
   robots: { index: false, follow: false },
 };
 
