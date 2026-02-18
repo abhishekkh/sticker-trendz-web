@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
-import { SiteHeader } from "@/components/shop/SiteHeader";
 import { Toaster } from "react-hot-toast";
 
 const geist = Geist({
@@ -22,7 +21,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geist.variable} antialiased bg-gray-50`}>
-        <SiteHeader />
         {children}
         <Toaster position="bottom-center" />
       </body>

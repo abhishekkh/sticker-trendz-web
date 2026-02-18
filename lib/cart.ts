@@ -73,6 +73,7 @@ export const useCartStore = create<CartStore>()(
     }),
     {
       name: "sticker-trendz-cart",
+      skipHydration: true,
     }
   )
 );

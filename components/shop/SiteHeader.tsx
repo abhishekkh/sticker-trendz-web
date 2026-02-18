@@ -1,13 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useCartStore } from "@/lib/cart";
 import { CartDrawer } from "./CartDrawer";
 
 export function SiteHeader() {
   const [cartOpen, setCartOpen] = useState(false);
   const itemCount = useCartStore((s) => s.itemCount());
+
+  // Hydrate cart from localStorage after mount to avoid SSR/client mismatch.
+  useEffect(() => {
+    useCartStore.persist.rehydrate();
+  }, []);
 
   return (
     <>
