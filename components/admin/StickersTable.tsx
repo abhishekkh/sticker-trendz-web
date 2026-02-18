@@ -43,6 +43,26 @@ function SortIcon({ active, dir }: { active: boolean; dir: SortDir }) {
   );
 }
 
+interface SortableHeaderProps {
+  label: string;
+  col: SortKey;
+  sortKey: SortKey | null;
+  sortDir: SortDir;
+  onSort: (col: SortKey) => void;
+}
+
+function SortableHeader({ label, col, sortKey, sortDir, onSort }: SortableHeaderProps) {
+  return (
+    <th
+      className="px-4 py-3 whitespace-nowrap cursor-pointer select-none hover:text-gray-800"
+      onClick={() => onSort(col)}
+    >
+      {label}
+      <SortIcon active={sortKey === col} dir={sortDir} />
+    </th>
+  );
+}
+
 function SkeletonRow() {
   return (
     <tr>
@@ -85,24 +105,6 @@ export default function StickersTable({
     });
   }, [stickers, sortKey, sortDir]);
 
-  function SortableHeader({
-    label,
-    col,
-  }: {
-    label: string;
-    col: SortKey;
-  }) {
-    return (
-      <th
-        className="px-4 py-3 whitespace-nowrap cursor-pointer select-none hover:text-gray-800"
-        onClick={() => handleSort(col)}
-      >
-        {label}
-        <SortIcon active={sortKey === col} dir={sortDir} />
-      </th>
-    );
-  }
-
   return (
     <div
       className={cn(
@@ -115,9 +117,9 @@ export default function StickersTable({
           <tr className="border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold uppercase tracking-wide text-gray-500">
             <th className="px-4 py-3 whitespace-nowrap">Thumbnail</th>
             <th className="px-4 py-3 whitespace-nowrap">Title</th>
-            <SortableHeader label="Sales Count" col="sales_count" />
+            <SortableHeader label="Sales Count" col="sales_count" sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
             <th className="px-4 py-3 whitespace-nowrap">Tier</th>
-            <SortableHeader label="Price" col="price" />
+            <SortableHeader label="Price" col="price" sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
             <th className="px-4 py-3 whitespace-nowrap">Published Date</th>
           </tr>
         </thead>
