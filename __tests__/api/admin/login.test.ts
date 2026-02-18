@@ -62,7 +62,7 @@ const { NextRequest, NextResponse } = require("next/server");
 beforeEach(() => {
   jest.clearAllMocks();
   process.env.ADMIN_SECRET = ADMIN_SECRET;
-  process.env.NODE_ENV = "test";
+  // NODE_ENV is read-only; skip reassignment in tests
   // Reset cookie store
   Object.keys(NextResponse.__cookieStore).forEach(
     (k) => delete NextResponse.__cookieStore[k]
@@ -116,7 +116,7 @@ describe("POST /api/admin/login", () => {
         throw new Error("Invalid JSON");
       },
     };
-    const res = await POST(mockReq as Parameters<typeof POST>[0]);
+    const res = await POST(mockReq as unknown as Parameters<typeof POST>[0]);
     expect(res.status).toBe(400);
   });
 
