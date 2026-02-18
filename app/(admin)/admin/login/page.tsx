@@ -14,7 +14,7 @@ export default async function AdminLoginPage() {
   const token = cookieStore.get("admin_token")?.value;
   const secret = process.env.ADMIN_SECRET ?? "";
 
-  if (token && validateAdminToken(token, secret)) {
+  if (token && (await validateAdminToken(token, secret))) {
     redirect("/admin");
   }
 
