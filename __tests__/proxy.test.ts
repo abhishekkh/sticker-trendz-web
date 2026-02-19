@@ -1,10 +1,10 @@
-// Mock next/server before importing middleware (uses Web API Request not available in Node)
+// Mock next/server before importing proxy (uses Web API Request not available in Node)
 jest.mock("next/server", () => ({
   NextRequest: class {},
   NextResponse: { next: jest.fn(), redirect: jest.fn() },
 }));
 
-import { generateAdminToken, validateAdminToken } from "@/middleware";
+import { generateAdminToken, validateAdminToken } from "@/proxy";
 import { createHmac } from "crypto";
 
 const SECRET = "super-secret-admin-password";

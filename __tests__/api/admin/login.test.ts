@@ -47,7 +47,7 @@ jest.mock("next/server", () => {
   return { NextResponse, NextRequest: MockRequest };
 });
 
-jest.mock("@/middleware", () => ({
+jest.mock("@/proxy", () => ({
   generateAdminToken: jest.fn(() => "mocked-hmac.1234567890"),
   validateAdminToken: jest.fn(() => true),
 }));

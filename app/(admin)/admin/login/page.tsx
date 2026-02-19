@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { validateAdminToken } from "@/middleware";
+import { validateAdminToken } from "@/proxy";
 import LoginForm from "@/components/admin/LoginForm";
 
 export const metadata: Metadata = {

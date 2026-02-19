@@ -1,8 +1,6 @@
 import { createHmac, timingSafeEqual } from "crypto";
 import { NextRequest, NextResponse } from "next/server";
 
-export const runtime = "nodejs";
-
 const TOKEN_MAX_AGE_SECONDS = 24 * 60 * 60;
 
 /**
@@ -44,7 +42,7 @@ export function validateAdminToken(token: string, secret: string): boolean {
   }
 }
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Allow unauthenticated access to the login page itself

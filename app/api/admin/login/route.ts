@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { generateAdminToken } from "@/middleware";
+import { generateAdminToken } from "@/proxy";
 
 export async function POST(request: NextRequest) {
   let body: { password?: string };
