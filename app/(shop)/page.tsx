@@ -5,6 +5,8 @@ import { StickerGrid } from "@/components/shop/StickerGrid";
 import { StickerGridSkeleton } from "@/components/shop/StickerGridSkeleton";
 import type { Sticker } from "@/types";
 
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: "Sticker Trendz — Trending Stickers, Delivered",
   description:
