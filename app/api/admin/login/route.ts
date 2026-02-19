@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid password" }, { status: 401 });
   }
 
-  const token = generateAdminToken(secret);
+  const token = await generateAdminToken(secret);
   const response = NextResponse.json({ success: true });
 
   response.cookies.set("admin_token", token, {
